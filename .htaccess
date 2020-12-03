@@ -1,0 +1,10 @@
+#RewriteEngine On
+#
+#RewriteRule !^frontend/web /frontend/web%{REQUEST_URI} [L]
+#
+## If a directory or a file exists, use it directly
+##base url ni bush qoldirish
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+## Otherwise forward it to index.php
+#RewriteRule . index.php
