@@ -15,10 +15,9 @@ class m201202_193546_create_product_table extends Migration
         $this->createTable('{{%product}}', [
             'id' => $this->primaryKey().' NOT NULL AUTO_INCREMENT',
             'product_name' => $this->string(225).' NOT NULL',
-            'product_image' => $this->string(225).' NOT NULL',
             'product_price' => $this->string(225).' NOT NULL',
-            'product_about' => $this->string(225).' NOT NULL',
-            'categore_id' => $this->string(225).' NOT NULL',
+            'categore_name' => $this->string(225).' NOT NULL',
+            'product_reyting' => $this->string(225).' NOT NULL',
         ]);
     }
 
