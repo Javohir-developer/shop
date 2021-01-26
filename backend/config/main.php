@@ -15,15 +15,9 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [
-        'v1' => [
-            'class' => 'api\modules\v1\Module',
-        ],
-    ],
+    'modules' => [],
     'components' => [
-
         'request' => [
-            'baseUrl' => '',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -50,11 +44,9 @@ return [
 
         'urlManager' => [
             'class' => 'codemix\localeurls\UrlManager',
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'enableLanguagePersistence' => false,
-            'enableLanguageDetection' => false,
-            'languages' => ['en', 'uz', 'cyrl', 'ru'],
+            'languages' => ['en', 'ru', 'uz'], // List all supported languages here
+//            'enablePrettyUrl' => true,
+//            'showScriptName' => false,
         ],
     ],
     'params' => $params,
