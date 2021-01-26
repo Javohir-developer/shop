@@ -104,8 +104,6 @@ AppAsset::register($this);
             <!-- nav-wrap -->
             <div id="nav-wrap">
                 <ul class="">
-                        <li><a href="<?=\yii\helpers\Url::to(["clent/index"], true)?>" class=""  style="font-size: 18px"><i class="fa fa-cogs"></i>Покупатель</a>
-                        <li><a href="<?=\yii\helpers\Url::to(["category/index"], true)?>" class=""  style="font-size: 18px"><i class="fa fa-cogs"></i>Категория</a>
                         <li><a href="<?=\yii\helpers\Url::to(["product/index"], true)?>" class=""  style="font-size: 18px"><i class="fa fa-cogs"></i>Товар</a>
                         <li><a href="<?=\yii\helpers\Url::to(["/site/logout"], true)?>" class=""  style="font-size: 18px"><i class="fas fa-sign-out-alt"></i> выход</a></li>
                 </ul>

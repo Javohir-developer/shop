@@ -17,7 +17,9 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+
         'request' => [
+            'baseUrl' => '',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -44,9 +46,11 @@ return [
 
         'urlManager' => [
             'class' => 'codemix\localeurls\UrlManager',
-            'languages' => ['en', 'ru', 'uz'], // List all supported languages here
-//            'enablePrettyUrl' => true,
-//            'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableLanguagePersistence' => false,
+            'enableLanguageDetection' => false,
+            'languages' => ['en', 'uz', 'cyrl', 'ru'],
         ],
     ],
     'params' => $params,
